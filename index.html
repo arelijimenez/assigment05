@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 5</title>
+    <script src="js/script.js" defer></script>
+
+    <style>
+        h1 {margin-top: 20px; font-style: oblique; padding: 20px}
+        h1 {margin-bottom: 1px;}
+        label {font-weight: bold; font-style: oblique; }
+        input, select {margin-bottom: 10px;}
+        form {width: 40%; padding: 30px;}
+        fieldset {border-color: orange; border-width: 4px;background-color: rgb(250, 247, 244);}
+        option {background-color: rgb(250, 247, 244);}
+        button {color: white; font-size: .95rem; background-color: rgb(83, 195, 247);}
+    </style>
+</head>
+
+<body class="mt-2 ml-4">
+    <h1>Employee Management System</h1>
+    <form id="empForm" name="empForm" method="post">
+        <fieldset>
+            <br>
+            <div>
+                <label for="employeeID">8-Digit Employee ID: </label>
+                <input type="text" id="employeeID" name="employeeID"><br>
+            </div>
+
+            <div>
+                <label for="name">Name: </label>
+                <input type="text" id="name" name="name"><br>
+            </div>
+
+            <div>
+                <label for="ext">Ext: </label>
+                <input type="text" id="ext" name="ext"><br>
+            </div>
+
+            <div>
+                <label for="email">Email: </label>
+                <input type="text" id="email" name="email"><br>
+            </div>
+            
+            <div>
+                <label for="department">Deparment: </label><br>
+                <select name="department" id="department">
+                    <option value = "">Select Deparment</option>
+                    <option>Administrative</option>
+                    <option>Engineering</option>
+                    <option>Executive</option>
+                    <option>Marketing</option> 
+                    <option>Quality Assurance</option>
+                    <option>Sales</option> 
+                </select><br><br>
+            </div>
+
+            <div class="button">
+                <label>&nbsp;</label>
+                <button id="addEmployee" value="AddEmployee">Add  Employee</button><span></span><br><br>
+            </div>
+
+        </fieldset>
+    </form>
+</body>
+</html>
